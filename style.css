@@ -1,0 +1,260 @@
+body {
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 40px;
+    background-position: left;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+  
+h1 {
+    text-align: center;
+    color: pink;
+    text-shadow: 1px 1px 5px blue;
+    font-family: 'Macondo', cursive;
+}
+  
+.container {
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    margin: auto;
+    background-image: linear-gradient(pink, purple);
+    border-radius: 14px;
+    border: 2px groove blue;
+    text-align: center;
+    margin-top: 200px;
+}
+  
+input {
+    background-color: transparent;
+    color: lightblue;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ffeaa7;
+    font-size: 18px;
+    text-align: center;
+}
+  
+.app {
+    margin-bottom: 10px;
+    margin-top: -24px;
+}
+  
+#word {
+    font-family: 'Inconsolata', monospace;
+    font-size: 25px;
+    letter-spacing: 8px;
+    margin-bottom: 50px;
+}
+  
+button {
+    width: 122px;
+    height: 46px; 
+    border: 2px solid powderblue;
+    background-image: linear-gradient(45deg, lightblue, pink);
+    margin-inline: 5px;
+    border-radius: 10%;
+    font-family: 'Permanent Marker', cursive;
+    color: mediumpurple;
+}
+  
+.controls {
+    margin-top: 50px;
+}
+  
+#play {
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+}
+  
+#return {
+    width: 50px;
+    height: 40px;
+}
+  
+.begin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -31px;
+}
+  
+#add {
+    margin-top: 25px;
+    display: inline-block;
+}
+  
+#time {
+    margin: auto;
+    font-size: 20px;
+    border-radius: 5px 5px 0 0;
+    font-family: 'Grape Nuts', cursive;
+    text-align: left;
+}
+  
+#score {
+    text-align: right;
+    font-family: 'Macondo', cursive;
+}
+  
+.wrong {
+    color: red;
+    border-color: red;
+}
+  
+h2 {
+    font-family: 'Courgette', cursive;
+}
+  
+h3 {
+    font-family: 'Caveat', cursive;
+}
+  
+.scoreboard {
+    margin-bottom: 20px;
+    margin-top: -27px;
+}
+  
+.pastScores {
+    font-family: 'Source Code Pro', monospace;
+    background-image: linear-gradient(lightblue, pink);
+    display: block;
+    border-radius: 14px;
+    font-size: 25px;
+    max-width: 500px;
+}
+  
+.begin > button {
+    flex-direction: row;
+    align-items: flex-end;
+}
+  
+#showScores {
+    margin-left: 389px;
+    margin-top: -11px;
+}
+  
+#home {
+    margin-left: 389px;
+    margin-top: -11px;
+}
+  
+.save {
+    background-image: linear-gradient(lightblue, pink);
+    border: none;
+    margin-inline: 0px;
+    width: 50px;
+    margin-left: -180px;
+    margin-right: 78px;
+    font-size: 25px;
+}
+  
+#lastWord {
+    font-family: 'Zen Loop', cursive;
+    font-size: 42px;
+}
+  
+#results {
+    margin-bottom: 60px;
+    margin-top: 33px;
+}
+  
+.skippedWords {
+    max-height: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    position: relative;
+    overflow: auto;
+}
+  
+.skippedWord > button {
+    display: normal;
+}
+  
+.skippedWord {
+    background-image: linear-gradient(90deg, mediumpurple, pink);
+    border: 2px solid lightblue;
+    border-radius: 14px;
+    font-size: 20px;
+    width: 200px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    margin-inline: 5px;
+}
+  
+select {
+    appearance: none;
+    background-image: linear-gradient(pink, lightblue);
+    text-align: center;
+    border: 2px solid mediumpurple;
+    border-radius: 10px;
+}
+  
+#seconds {
+    width: 50px;
+    height: 25px;
+}
+  
+#format {
+    width: 200px;
+    height: 40px;
+}
+  
+.settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+  
+#start {
+    position: absolute;
+    bottom: -62px;
+    right: 118px;
+}
+  
+#back {
+    width: 43px;
+    height: 40px;
+    position: absolute; 
+    left: -16px;
+    top: -12px;
+}
+  
+#backHome {
+    position: absolute;
+    bottom: -62px;
+    left: 118px;
+}
+  
+.music {
+    width: 40px;
+    height: 20px;
+    background-color: pink;
+    border-radius: 10px;
+    position: relative;
+    margin-top: -15px;
+}
+  
+.switch {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+}
+  
+.on {
+    right: 0px;
+}
+  
+#timeAmount {
+    margin-top: -10px;
+}

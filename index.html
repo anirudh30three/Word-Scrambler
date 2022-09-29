@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Word Scrambler</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kumar+One+Outline&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Loop:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <audio id="audio" src="music.mp4" preload loop></audio>
+    <div class="container">
+    <p id="time">Time Left: 60 secs</p>
+      <button id="showScores">Show Past Scores</button>
+      <div class="begin">
+        <h1>Word Scrambler</h1>
+        <img src="play.png" id="play">
+        <button id="add">Add Custom Word</button>
+      </div>
+      <div class="settings">
+        <h2 id="timeAmount">Time:</h2>
+        <select id="seconds">
+          <option>10</option>
+          <option>20</option>
+          <option>30</option>
+          <option>60</option>
+          <option>90</option>
+          <option>120</option>
+        </select>
+        <h2>Timer Format:</h2>
+        <select id="format">
+          <option>Timer Doesn't Reset</option>
+          <option>Timer Resets For Every Word</option>
+        </select>
+        <h2>Music:</h2>
+        <div class="music">
+          <div class="switch off">
+          </div>
+          <div class="switch on">
+          </div>
+        </div>
+        <button id="backHome"><i class="fa fa-arrow-left"></i></button>
+        <button id="start">Start Unscrambling!</button>
+      </div>
+      <div class="end">
+        <p id="lastWord"></p>
+        <button id="results">Show Results</button>
+      </div>
+      <div class="scoreboard">
+        <h2 id="finalCount"></h2>
+        <img src="abstract.png">
+        <h3>Game Over</h3>
+        <button id="restart">Play Again</button>
+        <button id="skipped">Show Skipped</button>
+      </div>
+      <div class="skippedWords">
+        <button id="back"><i class="fa fa-arrow-left"></i></button>
+      </div>
+      <div class="app">
+        <p id="score">Score: 0</p>
+        <p id="word"></p>
+        <input type="text" id="wordInput" placeholder="Enter guess">
+        <div class="controls">
+          <button id="scramble">Scramble Again</button>
+          <button id="next">Next Word</button>
+        </div>
+      </div>
+      <div class="scores">
+        <button id="home"><i class="fa fa-home"></i></button>
+      </div>
+      
+      <button id="return"><i class="fa fa-home"></i></button>
+    </div>
+    
+    
+    
+    <script src="words.js"></script>
+  </body>
+</html>
